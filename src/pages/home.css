@@ -1,0 +1,123 @@
+/* -- container -- */
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-inline: 10px;
+}
+
+/* -- hero-backdrop -- */
+.hero-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+/* -- blue-shadow -- */
+.hero-backdrop > .blue-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--blue-glow);
+    filter: blur(500px);
+}
+
+/* -- red-shadow -- */
+.hero-backdrop > .red-shadow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--red-glow);
+    filter: blur(500px);
+}
+
+
+/* -- bottom-backdrop -- */
+.bottom-backdrop {
+    background-color: var(--bg);
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    max-height: 100%;
+    bottom: 0;
+}
+
+/* -- content -- */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100%;
+    padding-block: 10px;
+    width: 600px;
+    max-width: 100%;
+    z-index: 999;
+}
+
+/* -- logo -- */
+.content > .logo {
+    width: 400px;
+    margin-inline: auto;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -- hero-header -- */
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.hero-header > .hero-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blue-glow);
+    background: linear-gradient(90deg, var(--blue-glow) 0%, var(--red-glow) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-main);
+}
+
+.hero-header > .hero-subtitle {
+    color: var(--text);
+    font-size: 14px;
+    font-family: var(--font-main);
+}
+
+/* -- footer -- */
+.footer {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer > .note {
+    font-size: 14px;
+    color: var(--text);
+}
+
+.footer > .by {
+    font-size: 14px;
+    color: var(--text);
+}

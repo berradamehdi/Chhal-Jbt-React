@@ -1,0 +1,83 @@
+/* -- grades-card -- */
+.grades-card {
+    border-radius: 20px;
+    background-color: var(--bg);
+    padding: 20px;
+    border: 1px solid var(--blue);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: -6px 0 24px rgba(10,60,255,.25), 6px 0 24px rgba(255,23,68,.22);
+}
+
+/* -- step-title -- */
+.grades-card > .step-title {
+    color: var(--text);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--font-main);
+    direction: rtl;
+}
+
+/* -- table-form -- */
+.grades-card > .table-form {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    direction: rtl;
+}
+
+.grades-card > .table-form > .col {
+    color: var(--text);
+    font-size: 14px;
+    font-family: var(--font-main);
+    font-weight: bold;
+    margin-bottom: 5px;
+    grid-column: span 1;
+    padding: 5px;
+}
+
+.grades-card > .table-form > .col-one {
+    grid-column: span 10;
+}
+
+.grades-card > .table-form > .col-header {
+    font-size: 10px;
+    color: gray;
+}
+
+.grades-card > .table-form > .col-two {
+    color: var(--text);
+    border: 1px solid var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: var(--font-num);
+}
+
+.grades-card > .table-form > .col-three {
+    grid-column: span 1;
+    width: 60px;
+    outline: none;
+    border: none;
+    text-align: center;
+    color: var(--text);
+    border: 1px solid var(--text);
+    background: none;
+    font-family: var(--font-num);
+    border-radius: 5px;
+    direction: rtl;
+}
+
+/* -- calculate-btn -- */
+.grades-card > .calculate-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,var(--blue-glow) 0%, var(--red-glow) 100%);
+    outline: none;
+    border: none;
+    color: var(--text);
+    font-family: var(--font-main);
+    font-weight: bold;
+}

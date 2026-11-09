@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+
+:root {
+  --bg:#000000;        /* الخلفية السوداء */
+  --blue:#1f6bff;      /* الأزرق النيون */
+  --blue-glow:#0a3cff;
+  --red:#ff2d55;       /* الأحمر/الوردي النيون */
+  --red-glow:#ff1744;
+  --violet:#2a1a4a;    /* الإضاءة البنفسجية اللي فالحواف */
+  --text:#e8ecff;
+  --font-main:'Cairo','Segoe UI',Tahoma,sans-serif;  /* للنصوص والعناوين (عربية) */
+  --font-num:'Orbitron','Courier New',monospace;     /* للأرقام والنقط */
+}

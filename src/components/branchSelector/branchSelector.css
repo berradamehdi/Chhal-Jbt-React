@@ -1,0 +1,51 @@
+/* -- branch-selector-card -- */
+.branch-selector-card {
+    border-radius: 20px;
+    background-color: var(--bg);
+    padding: 20px;
+    border: 1px solid var(--blue);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: -6px 0 24px rgba(10,60,255,.25), 6px 0 24px rgba(255,23,68,.22);
+}
+
+/* -- step-title -- */
+.branch-selector-card > .step-title {
+    color: var(--text);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--font-main);
+    direction: rtl;
+}
+
+/* -- select-box -- */
+.branch-selector-card > .select-box {
+    background-color: var(--bg);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    outline: none;
+    color: var(--text);
+    direction: rtl;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.branch-selector-card > .select-box:hover { 
+    box-shadow: -6px 0 24px rgba(10,60,255,.25), 6px 0 24px rgba(255,23,68,.22);
+}
+
+@media (max-width:767px) {
+    /* -- branch-selector-card -- */
+.branch-selector-card {
+    border-radius: 20px;
+    background-color: var(--bg);
+    padding: 10px;
+    border: 1px solid var(--blue);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: -6px 0 24px rgba(10,60,255,.25), 6px 0 24px rgba(255,23,68,.22);
+}
+}
