@@ -48,3 +48,9 @@
 .exam-options > .is-active {
     background: linear-gradient(90deg,var(--blue-glow) 0%,var(--red-glow) 100%);
 }
+
+@media (max-width:767px) {
+    .exam-options > .option-btn {
+        font-size: 12px;
+    }
+}
